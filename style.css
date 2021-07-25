@@ -21,27 +21,28 @@ main {
 
 .hero__video--container {
   width: 90vw;
-  margin: auto;
   margin-top: -45%;
 }
 
-.product__section {
-  /* border: 1px solid purple; */
+.product__section, .description__section {
+  border: 1px solid purple;
 }
 
-.product__heading--primary {
+.product__heading--primary,
+.description__heading--primary {
   font-weight: 900;
   font-size: 4vw;
   text-transform: uppercase;
 }
 
-.product__heading--secondary {
+.product__heading--secondary,
+.description__heading--secondary {
   font-weight: 400;
   font-size: 3.5vw;
 }
 
 .product__figure {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .product__figure img {
@@ -69,8 +70,46 @@ main {
 	transform: scale(0.9);
 }
 
+.description__cards {
+  border: 1px solid green;
+  width: 80vw;
+}
+
+div.description__card {
+  background-color: #AEB5BF;
+  border-radius: 38px;
+}
+
+.description__card--number {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.description__card--text {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
 
 /* ////////// Media Queries ////////// */
+
+@media (min-width: 768px) {
+  div.description__card { 
+    min-height: 85px;  
+    max-width: 264px;    
+  }
+  
+  .description__card--text {
+    min-height: 85px;
+  }
+}
+
 
 /* @media (min-width: 1440px) {
   .hero__figure--container {
@@ -92,5 +131,14 @@ main {
   .product__section .button {
     font-size: 2.25rem;
     border-radius: 10px;
+  }
+  
+  .description__cards {
+    width: 67vw;
+  }
+  
+  div.description__card {
+    height: 22.638vw;
+    width: 18.333vw;
   }
 } */
