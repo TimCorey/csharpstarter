@@ -2,6 +2,11 @@ body {
   height: 500vh; /* remove later */
 }
 
+main {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
 .hero__figure--container {
   background-color: #E9354C;
   width: 100%;
@@ -20,6 +25,51 @@ body {
   margin-top: -45%;
 }
 
+.product__section {
+  /* border: 1px solid purple; */
+}
+
+.product__heading--primary {
+  font-weight: 900;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+
+.product__heading--secondary {
+  font-weight: 400;
+  font-size: 3.5vw;
+}
+
+.product__figure {
+  /* border: 1px solid red; */
+}
+
+.product__figure img {
+  width: 100%;
+}
+
+.product__section .button {
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #E9354C;
+  color: #fff;
+}
+
+.product__section .button:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.product__section .button:hover {
+  color: #fff;
+  background-color: #a21224;
+  
+}
+
+.product__section .button:active {
+	transform: scale(0.9);
+}
+
+
 /* ////////// Media Queries ////////// */
 
 /* @media (min-width: 1440px) {
@@ -37,5 +87,10 @@ body {
     width: 963px;
     margin: auto;
     margin-top: -499px;
+  }
+  
+  .product__section .button {
+    font-size: 2.25rem;
+    border-radius: 10px;
   }
 } */
