@@ -7,6 +7,17 @@ main {
   text-align: center;
 }
 
+h1 {
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+}
+
+h2 {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
 .hero__figure--container {
   background-color: #E9354C;
   width: 100%;
@@ -24,21 +35,8 @@ main {
   margin-top: -45%;
 }
 
-.product__section, .description__section {
+.product__section, .description__section, .details__section {
   border: 1px solid purple;
-}
-
-.product__heading--primary,
-.description__heading--primary {
-  font-weight: 900;
-  font-size: 4vw;
-  text-transform: uppercase;
-}
-
-.product__heading--secondary,
-.description__heading--secondary {
-  font-weight: 400;
-  font-size: 3.5vw;
 }
 
 .product__figure {
@@ -80,6 +78,10 @@ div.description__card {
   border-radius: 38px;
 }
 
+div.description__card:hover {
+  background-color: #ff0000;
+}
+
 .description__card--number {
   font-size: 5rem;
   font-weight: 900;
@@ -95,6 +97,25 @@ div.description__card {
   margin-bottom: 0;
   padding: 1rem;
 }
+
+.details__list {
+  border: 1px solid green;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.details__list--item {
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
 
 
 /* ////////// Media Queries ////////// */
