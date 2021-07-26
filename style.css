@@ -35,11 +35,11 @@ h2 {
   margin-top: -45%;
 }
 
-.product__section, .description__section, .details__section {
+.product__section, .description__section, .details__section, .about__section {
   border: 1px solid purple;
 }
 
-.product__figure {
+.product__figure, .about__figure {
   border: 1px solid red;
 }
 
@@ -111,10 +111,28 @@ div.description__card:hover {
   margin-bottom: 1rem;
 }
 
+.about__section {
+  background-color: #AEB5BF;
+  color: #fff;
+  padding: 1rem 0;
+}
 
+.about__figure img {
+  height: 50vw;
+}
 
+.about__copy {
+  border: 1px solid green;
+  padding: 0 1rem;
+}
 
+.about__heading {
+  text-align: start;
+}
 
+.about__copy--para {
+  text-align: start;
+}
 
 
 
@@ -129,8 +147,19 @@ div.description__card:hover {
   .description__card--text {
     min-height: 85px;
   }
+  
+  
 }
 
+@media (min-width: 1024px) {
+  .about__section {
+    height: 830px;
+  }
+  
+  /* .about__figure img {
+    height: 25vh;
+  } */
+}
 
 /* @media (min-width: 1440px) {
   .hero__figure--container {
@@ -162,4 +191,9 @@ div.description__card:hover {
     height: 22.638vw;
     width: 18.333vw;
   }
+  
+  .about__section {
+  
+  height: 830px;
+}
 } */
