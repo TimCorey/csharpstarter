@@ -1,5 +1,5 @@
 body {
-  height: 500vh; /* remove later */
+  /* height: 500vh; remove later */
 }
 
 main {
@@ -16,6 +16,14 @@ h1 {
 h2 {
   font-weight: 400 !important;
   font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+
+a.button {
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #E9354C;
+  color: #fff;
 }
 
 .hero__figure--container {
@@ -45,13 +53,6 @@ h2 {
 
 .product__figure img {
   width: 100%;
-}
-
-.product__section .button {
-  text-transform: uppercase;
-  font-weight: 900;
-  background-color: #E9354C;
-  color: #fff;
 }
 
 .product__section .button:focus {
@@ -155,6 +156,10 @@ div.description__card:hover {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+}
+
+.final__figure img {
+  width: 90%;
 }
 
 
