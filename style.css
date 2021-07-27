@@ -80,7 +80,7 @@ div.description__card {
 }
 
 div.description__card:hover {
-  background-color: #ff0000;
+  background-color: #E9354C;
 }
 
 .description__card--number {
@@ -195,11 +195,6 @@ footer {
     width: 75vw;
   }
   
-  div.description__card { 
-    min-height: 85px;  
-    max-width: 264px;    
-  }
-  
   .description__card--text {
     min-height: 85px;
   }
@@ -221,6 +216,12 @@ footer {
   .about__figure img {
     height: 25vh;
   }
+  
+  div.description__card {
+    width: 205px;
+    padding: 1rem 1.5rem;
+  }
+  
 }
 
 @media (min-width: 1440px) {
@@ -251,14 +252,22 @@ footer {
     margin: auto;
     margin-top: -499px;
   }
-  
+
   .description__cards {
     width: 67vw;
   }
   
   div.description__card {
-    height: 22.638vw;
-    width: 18.333vw;
+    height: 326px;
+    width: 264px;
+  }
+  
+  .description__card--number {
+    font-size: 144px;
+  }
+  
+  .description__card--text {
+    font-size: 24px;
   }
   
   .about__section {
