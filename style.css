@@ -191,6 +191,10 @@ footer {
     border-radius: 10px;
   }
   
+  .product__figure img {
+    width: 75vw;
+  }
+  
   div.description__card { 
     min-height: 85px;  
     max-width: 264px;    
