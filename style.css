@@ -19,6 +19,8 @@ h2 {
   margin-bottom: 0 !important;
 }
 
+
+
 a.button {
   text-transform: uppercase;
   font-weight: 900;
@@ -158,10 +160,28 @@ div.description__card:hover {
   font-weight: 700;
 }
 
+/* .final__section {
+  margin-bottom: 0%;
+} */
+
 .final__figure img {
   width: 90%;
+  margin-bottom: 0%;
 }
 
+.final__figure {
+  margin-bottom: 0;
+}
+
+footer {
+  position: absolute;
+  z-index: -1;
+  background-color: #AEB5BF;
+  width: 100%;
+  height: 20vw;
+  clip-path: ellipse(75% 100% at 50% 100%);
+  margin-top: -13vw;
+}
 
 
 /* ////////// Media Queries ////////// */
