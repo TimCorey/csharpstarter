@@ -1,7 +1,3 @@
-/* body {
-  height: 500vh; remove later
-} */
-
 main {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -26,6 +22,19 @@ a.button {
   color: #fff;
 }
 
+a.button:hover {
+  color: #fff;
+  background-color: #a21224;
+}
+
+a.button:active {
+	transform: scale(0.9);
+}
+
+a.button:focus {
+  box-shadow: 0 0 0 0;
+}
+
 .hero__figure--container {
   background-color: #E9354C;
   width: 100%;
@@ -43,34 +52,11 @@ a.button {
   margin-top: -45%;
 }
 
-.product__section, .description__section, .details__section, .about__section, .testimonials__section {
-  border: 1px solid purple;
-}
-
-.product__figure, .about__figure {
-  /* border: 1px solid red; */
-}
-
 .product__figure img {
   width: 100%;
 }
 
-.product__section .button:focus {
-  box-shadow: 0 0 0 0;
-}
-
-.product__section .button:hover {
-  color: #fff;
-  background-color: #a21224;
-  
-}
-
-.product__section .button:active {
-	transform: scale(0.9);
-}
-
 .description__cards {
-  border: 1px solid green;
   width: 80vw;
 }
 
@@ -100,7 +86,6 @@ div.description__card:hover {
 }
 
 .details__list {
-  border: 1px solid green;
   list-style-type: none;
   text-align: center;
   padding: 0;
@@ -123,7 +108,6 @@ div.description__card:hover {
 }
 
 .about__copy {
-  /* border: 1px solid green; */
   padding: 0 1rem;
 }
 
@@ -144,7 +128,7 @@ div.description__card:hover {
   background-color: #fff;
   color: #000;
   border-radius: 2.5vw;
-  padding: 5%;
+  padding: 1.5% 5%;
 }
 
 .testimonials__para--secondary {
@@ -173,8 +157,7 @@ footer {
   margin-top: -13vw;
 }
 
-
-/* ////////// Media Queries ////////// */
+/* /////////////////////////////////// Media Queries /////////////////////////////////// */
 
 @media (min-width: 768px) {
   h1 {
@@ -216,9 +199,17 @@ footer {
     text-align: start;
   }
   
+  .testimonials__para--primary,
+  .testimonials__para--secondary {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .hero__figure--container img {
+    width: 70%;
+  }
+  
   div.description__card {
     width: 205px;
     padding: 1rem 1.5rem;
@@ -235,6 +226,11 @@ footer {
   
   .about__copy--para {
     font-size: 20px;
+  }
+  
+  .testimonials__para--primary,
+  .testimonials__para--secondary {
+    font-size: 24px;
   }
   
 }
@@ -258,13 +254,11 @@ footer {
   }
   
   .hero__figure--container img {
-    margin-top: -76px;
-    width: 844px;
+    width: 725px;
   }
   
   .hero__video--container {
     width: 963px;
-    margin: auto;
     margin-top: -499px;
   }
 
