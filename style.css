@@ -1,6 +1,6 @@
-body {
-  /* height: 500vh; remove later */
-}
+/* body {
+  height: 500vh; remove later
+} */
 
 main {
   font-family: 'Montserrat', sans-serif;
@@ -48,7 +48,7 @@ a.button {
 }
 
 .product__figure, .about__figure {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .product__figure img {
@@ -123,7 +123,7 @@ div.description__card:hover {
 }
 
 .about__copy {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 0 1rem;
 }
 
@@ -203,23 +203,38 @@ footer {
     font-size: 24px;
   }
   
+  .about__section {
+    height: 600px;
+  }
+  
+  .about__copy,
+  .about__figure img {
+    height: 450px;
+  }
+  
   .about__heading {
     text-align: start;
   }
+  
 }
 
 @media (min-width: 1024px) {
-  .about__section {
-    height: 830px;
-  }
-  
-  .about__figure img {
-    height: 25vh;
-  }
-  
   div.description__card {
     width: 205px;
     padding: 1rem 1.5rem;
+  }
+  
+  .about__section {
+    height: 650px;
+  }
+  
+  .about__copy,
+  .about__figure img {
+    height: 520px;
+  }
+  
+  .about__copy--para {
+    font-size: 20px;
   }
   
 }
@@ -272,6 +287,19 @@ footer {
   
   .about__section {
     height: 830px;
+  }
+  
+  .about__figure img {
+    height: 617px;
+  }
+  
+  .about__copy {
+    height: auto;
+  }
+  
+  .about__copy--para {
+    font-size: 24px;
+    margin-right: 142px;
   }
 
   .testimonials__para--primary,
