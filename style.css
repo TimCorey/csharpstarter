@@ -63,6 +63,7 @@ a.button:focus {
 div.description__card {
   background-color: #AEB5BF;
   border-radius: 38px;
+  border: 0;
 }
 
 div.description__card:hover {
